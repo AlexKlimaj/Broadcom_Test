@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AFBR.S50.Explorer.Options>
+    
+	<Argus1DPlotOptions Caption="1D Plot Options">
+        <ShowBinnedRangeSeries>True</ShowBinnedRangeSeries>
+        <ShowPixelAverageRangeSeries>False</ShowPixelAverageRangeSeries>
+        <ShowSmoothedRangeSeries>True</ShowSmoothedRangeSeries>
+        <ShowSigmaRangeSeries>True</ShowSigmaRangeSeries>
+        <Plot3Sigma>True</Plot3Sigma>
+        <RangeMin>0</RangeMin>
+        <RangeMax>10</RangeMax>
+        <RangeAutoScale>True</RangeAutoScale>
+        <ShowIntensitySeries>False</ShowIntensitySeries>
+        <ShowAmplitudeMaxSeries>True</ShowAmplitudeMaxSeries>
+        <ShowAmplitudeAvgSeries>True</ShowAmplitudeAvgSeries>
+        <ShowIntegrationEnergySeries>True</ShowIntegrationEnergySeries>
+        <ShowDigitalIntegrationDepthSeries>False</ShowDigitalIntegrationDepthSeries>
+        <ShowBinnedPixelCountSeries>True</ShowBinnedPixelCountSeries>
+        <ShowSaturatedPixelCountSeries>True</ShowSaturatedPixelCountSeries>
+        <ShowObjectAngleXSeries>False</ShowObjectAngleXSeries>
+        <ShowObjectAngleYSeries>False</ShowObjectAngleYSeries>
+        <PlotBufferSize>100</PlotBufferSize>
+        <PlotValidDataOnly>False</PlotValidDataOnly>
+	</Argus1DPlotOptions>
+    
+	<Argus3DPlotOptions Caption="3D Plot Options">
+        <PlotSmoothedData>True</PlotSmoothedData>
+		<HideBinnedPixels>True</HideBinnedPixels>
+		<RangeColorAmplitude>False</RangeColorAmplitude>
+		<RangeAutoScale>False</RangeAutoScale>
+		<AmplitudeAutoScale>True</AmplitudeAutoScale>
+		<RangeMax>10</RangeMax>
+		<RangeMin>0</RangeMin>
+		<AmplitudeMin>0</AmplitudeMin>
+		<AmplitudeMax>4096</AmplitudeMax>
+	</Argus3DPlotOptions>
+    
+	<ArgusDataOptions Caption="Generic Data View Options">
+		<RefreshRate>30</RefreshRate>
+		<EMA>False</EMA>
+		<SMABufferSize>50</SMABufferSize>
+		<EMAWeight>0.1</EMAWeight>
+	</ArgusDataOptions>
+
+    <ArgusAPIOptions Caption="API Options">
+        <AdvancedMode>False</AdvancedMode>
+        <DebugMode>False</DebugMode>
+    </ArgusAPIOptions>
+    
+	<ArgusRawDataOptions Caption="Pixel View Options">
+		<ShowSampleValues>True</ShowSampleValues>
+		<ShowSampleRaw>True</ShowSampleRaw>
+		<ShowSampleMean>False</ShowSampleMean>
+		<ShowSampleSigma>False</ShowSampleSigma>
+		<ShowSampleMinMax>False</ShowSampleMinMax>
+        <ShowStatusValues>False</ShowStatusValues>
+		<ShowRangeValues>True</ShowRangeValues>
+		<ShowRangeRaw>True</ShowRangeRaw>
+		<ShowRangeMean>True</ShowRangeMean>
+		<ShowRangeSigma>True</ShowRangeSigma>
+		<ShowRangeMinMax>False</ShowRangeMinMax>
+		<ShowAmplValues>True</ShowAmplValues>
+		<ShowAmplRaw>True</ShowAmplRaw>
+		<ShowAmplMean>True</ShowAmplMean>
+		<ShowAmplSigma>True</ShowAmplSigma>
+		<ShowAmplMinMax>False</ShowAmplMinMax>
+		<ShowPhaseValues>True</ShowPhaseValues>
+		<ShowPhaseRaw>True</ShowPhaseRaw>
+		<ShowPhaseMean>True</ShowPhaseMean>
+		<ShowPhaseSigma>True</ShowPhaseSigma>
+		<ShowPhaseMinMax>False</ShowPhaseMinMax>
+		<ShowSNR>False</ShowSNR>
+		<ShowFoM>False</ShowFoM>
+		<NumericFormat>0.0000</NumericFormat>
+	</ArgusRawDataOptions>
+
+    <LSCOptions Caption="LSC Options">
+        <LSC1_OffsetSI>0.0</LSC1_OffsetSI>
+        <LSC1_VelocitySI>0.05</LSC1_VelocitySI>
+        <LSC1_StepSizeSI>0.01</LSC1_StepSizeSI>
+        <LSC1_Inverted>False</LSC1_Inverted>
+        <LSC2_OffsetSI>6.0</LSC2_OffsetSI>
+        <LSC2_VelocitySI>0.05</LSC2_VelocitySI>
+        <LSC2_StepSizeSI>0.01</LSC2_StepSizeSI>
+        <LSC2_Inverted>True</LSC2_Inverted>
+    </LSCOptions>
+    
+    <SMUOptions Caption="SMU Options">
+        <IsConnected>False</IsConnected>
+    </SMUOptions>
+    
+    <TECOptions Caption="TEC Options">
+        <IsConnected>False</IsConnected>
+    </TECOptions>
+    
+</AFBR.S50.Explorer.Options>
