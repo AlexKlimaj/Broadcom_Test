@@ -1,0 +1,2 @@
+board.c:6:6:BOARD_ClockInit	8	static
+board.c:12:6:COP_Disable	4	static
