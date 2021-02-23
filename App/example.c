@@ -34,7 +34,7 @@
 #endif
 
 /*! Define the SPI slave (to be used in the SPI module). */
-#define SPI_SLAVE 1
+#define SPI_SLAVE 2
 
 /*! Define the SPI baud rate (to be used in the SPI module). */
 #define SPI_BAUD_RATE 6000000
@@ -103,6 +103,7 @@ int main(void)
 	if (hnd == 0)
 	{
 		/* Error Handling ...*/
+		print("ERROR: Handle not initialized\r\n");
 	}
 
 	/* Initialize the platform hardware including the required peripherals
@@ -122,6 +123,7 @@ int main(void)
 	if (status != STATUS_OK)
 	{
 		/* Error Handling ...*/
+		print("ERROR: Init status not okay: %i\r\n", status);
 	}
 
 	/* Print some information about current API and connected device. */

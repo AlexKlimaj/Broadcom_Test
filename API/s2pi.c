@@ -37,8 +37,8 @@ typedef struct
 }
 s2pi_handle_t;
 
-s2pi_handle_t s2pi_ = { .SpiAlternate = GPIO_AF5_SPI1,
-.GPIOs = { [ S2PI_CLK ] = { GPIOA, GPIO_PIN_5 },
+s2pi_handle_t s2pi_ = { .SpiAlternate = GPIO_AF5_SPI2,
+.GPIOs = { [ S2PI_CLK ] = { GPIOB, GPIO_PIN_10 },
 [ S2PI_CS ] = { GPIOB, GPIO_PIN_12 },
 [ S2PI_MOSI ] = { GPIOB, GPIO_PIN_15 },
 [ S2PI_MISO ] = { GPIOB, GPIO_PIN_14 },
@@ -69,7 +69,7 @@ status_t S2PI_Init(s2pi_slave_t defaultSlave, uint32_t baudRate_Bps)
 	MX_GPIO_Init();
 	MX_DMA_Init();
 	MX_SPI2_Init();
-	if (defaultSlave != S2PI_S1)
+	if (defaultSlave != S2PI_S2)
 	return ERROR_S2PI_INVALID_SLAVE;
 	return S2PI_SetBaudRate(baudRate_Bps);
 }
@@ -319,7 +319,7 @@ void * callbackData)
 if (!txData || frameSize == 0 || frameSize >= 0x10000)
 return ERROR_INVALID_ARGUMENT;
 /* Check the spi slave.*/
-if (spi_slave != S2PI_S1)
+if (spi_slave != S2PI_S2)
 return ERROR_S2PI_INVALID_SLAVE;
 /* Check the driver status, lock if idle. */
 IRQ_LOCK();
