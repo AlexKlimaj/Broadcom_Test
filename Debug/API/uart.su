@@ -1,4 +1,0 @@
-uart.c:23:10:UART_Init	8	static
-uart.c:43:10:UART_SendBuffer	24	static
-uart.c:64:6:HAL_UART_TxCpltCallback	24	static
-uart.c:86:10:print	16	static

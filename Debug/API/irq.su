@@ -1,2 +1,0 @@
-irq.c:13:6:IRQ_UNLOCK	8	static
-irq.c:30:6:IRQ_LOCK	4	static
