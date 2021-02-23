@@ -37,7 +37,7 @@
 #define SPI_SLAVE 2
 
 /*! Define the SPI baud rate (to be used in the SPI module). */
-#define SPI_BAUD_RATE 6000000
+#define SPI_BAUD_RATE 5000000
 
 /*******************************************************************************
  * Variables
