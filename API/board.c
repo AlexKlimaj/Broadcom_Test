@@ -6,7 +6,6 @@ extern void SystemClock_Config(void);
 void BOARD_ClockInit(void)
 {
 SystemClock_Config();
-return STATUS_OK;
 }
 /* No watchdog installed */
 void COP_Disable(void) {}
