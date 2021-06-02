@@ -195,7 +195,7 @@ int main(void)
 			{
 				/* Use the recent measurement results
 				 * (converting the Q9.22 value to float and print or display it). */
-				print("Range: %d mm\n", res.Bin.Range / (Q9_22_ONE / 1000));
+				print("Range: %d mm\r\n", res.Bin.Range / (Q9_22_ONE / 1000));
 			}
 		}
 		else
